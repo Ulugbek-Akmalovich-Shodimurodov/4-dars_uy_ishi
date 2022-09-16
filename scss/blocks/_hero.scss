@@ -1,0 +1,246 @@
+.hero {
+}
+.hero__container {
+}
+.hero__header {
+}
+.hero__course {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 128px;
+}
+.hero__course-about {
+}
+.hero__course-plays {
+    display: flex;
+    align-items: center;
+}
+.hero__plays-img {
+    display: block;
+}
+.hero__plays-span {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1E212C;
+}
+.hero__course-desc {
+    margin: 40px 0 0 0;
+    padding: 0;
+    max-width: 496px;
+    width: 100%;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    color: #1E212C;
+}
+.hero__course-btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+.hero__btns-btn {
+    margin: 0;
+    padding: 0 40px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border:  1px solid #FF3F3A;
+    border-radius: 4px;
+    // &:hover {
+    //     color: #FFFFFF;
+    // }
+}
+.hero__btns-btn2 {
+    margin: 0;
+    padding: 0 40px;
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+}
+.hero__course-img {
+    display: block;
+}
+.hero__prices {
+    margin-top: 189px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero__prices-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.hero__price-span1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+}
+.hero__price-span2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+}
+.hero__prices-box {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #FF3F3A;
+}
+@include breakpoint-down(1150px) {
+    .hero__course-desc {
+        font-size: 50px;
+        line-height: 120%;
+    }
+    .hero__course-img {
+        width: 550px;
+    }
+}
+
+@include breakpoint-down(1000px) {
+    .hero__course-desc {
+        font-size: 40px;
+        line-height: 120%;
+    }
+    .hero__btns-btn {
+        padding: 0 25px;
+        font-size: 16px;
+        line-height: 52px;
+    }
+    .hero__btns-btn2 {
+        margin: 0;
+        padding: 0 25px;
+        font-size: 16px;
+        line-height: 52px;
+    }
+    .hero__course-img {
+        width: 520px;
+    }
+}
+@include breakpoint-down(900px) {
+    .hero__course-desc {
+        font-size: 36px;
+        line-height: 110%;
+    }
+    .hero__btns-btn {
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 46px;
+    }
+    .hero__btns-btn2 {
+        margin: 0;
+        padding: 0 25px;
+        font-size: 14px;
+        line-height: 46px;
+    }
+    .hero__course-img {
+        width: 450px;
+    }
+}
+
+@include breakpoint-down(810px) {
+    .hero__course {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+    .hero__course-about {
+        width: 100%;
+    }
+    .hero__course-img {
+        width: 750px;
+    }
+}
+@include breakpoint-down(480px) {
+    .hero__course-desc {
+        font-size: 32px;
+        line-height: 110%;
+    }
+    .hero__btns-btn {
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+    .hero__btns-btn2 {
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+}
+@include breakpoint-down(320px) {
+    .hero__course-desc {
+        font-size: 28px;
+        line-height: 100%;
+    }
+    .hero__btns-btn {
+        padding: 0 15px;
+        font-size: 12px;
+        line-height: 35px;
+    }
+    .hero__btns-btn2 {
+        padding: 0 15px;
+        font-size: 12px;
+        line-height: 35px;
+    }
+}
+
+@include breakpoint-down(1050px) {
+    .hero__prices {
+        gap: 15px;
+    }
+    .hero__prices-box {
+        display: none;
+    }
+}
+@include breakpoint-down(704px) {
+    .hero__prices {
+        margin-top: 150px;
+        justify-content: space-around;
+    }
+}
+@include breakpoint-down(512px) {
+    .hero__prices {
+        margin-top: 110px;
+    }
+    .hero__prices-price {
+        width: 70%;
+    }
+}
+@include breakpoint-down(408px) {
+    .hero__prices {
+        margin-top: 70px;
+    }
+    .hero__prices-price {
+        width: 100%;
+    }
+}
+ 

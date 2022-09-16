@@ -352,14 +352,6 @@
 
 /* our events */
 
-.workshop {
-    // padding-top: 80px; 
-    // padding-bottom: 85px;
-    
-    // background-image: url(../../img/workshop.png);
-    // background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
-    // opacity: 0.2;
-}
 .workshop__container {
     padding: 60px;  
     display: flex;
@@ -391,7 +383,7 @@
     margin-top: 60px;
 }
 .workshop__item {
-    padding: 32px 40px 34px 40px;
+    padding: 32px 20px 34px 20px;
     background: #FFFFFF;
     border-radius: 4px;
     &:not(:last-child) {
@@ -461,7 +453,7 @@
     color: #787A80;
 }
 .workshop__item-btn {
-    width: 130px;
+    width: 140px;
     padding: 15px 20px;
     border: 1px solid #FF3F3A;
     border-radius: 4px;
@@ -918,6 +910,8 @@
 .meet {
     padding-top: 166px;
     padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: #F4F5F7;
 }
 
@@ -1092,8 +1086,7 @@
 /* posts */
 
 .posts {
-    padding-top: 120px;
-    padding-bottom: 180px;
+    padding: 120px 15px 180px 15px;
 }
 
 .posts__course-btn {
@@ -1233,5 +1226,91 @@
     }
     .posts__item-coomets {
         flex-wrap: wrap;
+    }
+}
+
+
+/* form */
+
+
+.form__container {
+    padding-top: 120px;
+    padding: 120px 15px 180px 15px;
+    
+    text-align: center;
+    background:#FFA07A;
+
+}
+.form__heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+
+    background:#FFA07A;
+}
+.form__text {
+    max-width: 810px;
+    width: 100%;
+    margin: 8px 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: #1E212C;
+}
+.form__form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.form__form-your {
+    max-width: 422px; 
+    width: 100%;
+}
+.form__form-your-input {
+    max-width: 422px; 
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+}
+
+
+@include breakpoint-down(600px) {
+    .form {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+    .form__text {
+        font-size: 34px;
+        line-height: 120%;
+    }
+}
+@include breakpoint-down(400px) {
+    .form__heading {
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .form__text {
+        font-size: 28px;
+        line-height: 120%;
+    }
+    .form__form {
+        flex-direction: column;
+        align-items: center;
     }
 }
