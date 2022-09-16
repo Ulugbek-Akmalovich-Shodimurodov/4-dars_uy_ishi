@@ -1790,7 +1790,6 @@ li {
 @media only screen and (max-width: 600px) {
   .form {
     padding-top: 80px;
-    padding-bottom: 100px;
   }
   .form__text {
     font-size: 34px;
